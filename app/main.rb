@@ -9,7 +9,7 @@ def tick args
 	#  used like any other sprite.
 	w = 1280
 	h = 720
-	x = (1280 - w) / 2
+	x = (1280 - w) / 2 # kept in case size of array changed to less than full screen
 	y = (720 - h) / 2
 	args.outputs.background_color = [64, 0, 128]
 	args.outputs.primitives << [x, y, w, h, :scanner, 0].sprite
