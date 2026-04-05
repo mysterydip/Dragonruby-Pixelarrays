@@ -16,7 +16,7 @@ void color_sethex(int hexcolor) {
 	r = (hexcolor >> 16);
 	g = ((hexcolor >> 8) & 0xFF);
 	b = (hexcolor & 0xFF);
-	colorRGB[colors] = (255<<24)+(b<<16)+(g<<8)+r; // dragonruby uses AGBR instead of RGBA
+	colorRGB[colors] = (255<<24)+(b<<16)+(g<<8)+r; // dragonruby uses ABGR instead of RGBA
 	colors++;
 }
 
